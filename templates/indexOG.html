@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+		<style>
+			body {
+				background-color:  #F7F7F7;
+                background-image: url('static/bg5.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                color: #212121;
+			}
+			h3 {
+				color: #ffffff;
+				margin-top: 2rem;
+			}
+            h4 {
+				color: #ffffff;
+				margin-bottom: 1rem;
+				margin-top: 1rem;
+
+			}
+			hr {
+				border-color: #d7e2eb;
+			}
+			.form-group label {
+				color: #135795;
+			}
+			.form-group input[type="file"] {
+				margin-top: 1rem;
+			}
+			.btn-primary {
+				background-color: #135795;
+				border-color: #135795;
+				margin-top: 2rem;
+			}
+			.btn-primary:hover {
+				background-color: #0c3f5b;
+				border-color: #0c3f5b;
+			}
+			.btn-primary:focus {
+				background-color: #135795;
+				border-color: #135795;
+			}
+			.social-icons img {
+				margin-right: 1rem;
+			}
+		</style>
+
+		<title>OVH - YOLOv5 Object Detection</title>
+	</head>
+	<body >
+		<form method="post" enctype="multipart/form-data">
+            <div style="height: 300px;"></div>
+			<div class="container">
+				<h3 align="center">Cigarette Smoking Detection App</h3>
+				<hr>
+				<div class="form-group">
+					<h4>Choose an image</h4>
+					<input type="file" name="file" class="form-control-file" id="inputFile" style="color: rgb(149, 149, 149);">
+				</div>
+                <div style="height: 20px;"></div>
+				<div class="form-group">
+					<h4>Select a detection model</h4>
+					<select name="model_choice" class="form-control" id="modelChoice">
+						{% for i in range(0, len) %}
+							<option>{{ listOfKeys[i] }}</option>
+						{% endfor %}
+					</select>
+				</div>
+				<div style="height: 20px;"></div>
+
+
+				<div class="form-group">
+					<h4>Select Detection Type:</h4>
+					<p style="color: #F7F7F7;">Single Image<input type="radio" name="detect_choice" value="single" checked><br></p>
+					<p style="color: #F7F7F7;" > Live Detection <input type="radio" name="detect_choice" value="live"> <br></p> 
+					
+				</div>
+				
+				<button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+			</div>
+			<div class="social-icons text-center mt-5">
+				<a href="https://www.linkedin.com/in/akshay-sanil-051415239/">
+					<img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="25" height="25" alt="LinkedIn">
+				</a>
+				<a href="https://github.com/akshaysanil">
+					<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="30" height="30" alt="GitHub">
+				</a>
+			</div>
+		</form>
+
+		<script src="//code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X
