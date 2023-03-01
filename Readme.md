@@ -1,4 +1,4 @@
 # Deploying yolov5 Smoking detection model using Flask api and OpenCV
 
 
-![image](Screenshot from 2023-03-01 10-18-13.png    )
+![image](https://user-images.githubusercontent.com/104578088/222047829-ea7d6b20-604c-447c-bfb7-463ffb93789e.png)
